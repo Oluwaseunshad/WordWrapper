@@ -40,7 +40,7 @@ public static String wrap(String word, int columnNumber) {
     word = word.trim();
     
     //if the length of the string is less than the maximum wordlength for each line, return string.
-    if(word.length() < columnNumber)
+    if(word.length() <= columnNumber)
         return word;
     
     //split the returned substring if it contains a line separator(\n) 
